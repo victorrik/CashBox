@@ -1,0 +1,18 @@
+diff --git a/node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/JSIInstaller.h b/node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/JSIInstaller.h
+index c1b7efb..3bdfa74 100644
+--- a/node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/JSIInstaller.h
++++ b/node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/JSIInstaller.h
+@@ -2,6 +2,13 @@
+ 
+ #import <React/RCTBridge+Private.h>
+ 
++// RN 0.88 removed RCTCxxBridge. In bridgeless mode the bridge is an RCTBridgeProxy,
++// which still answers -runtime, so expose that selector and alias the old type.
++@interface RCTBridge (WMDBRuntime)
++@property (nonatomic, readonly) void *runtime;
++@end
++typedef RCTBridge RCTCxxBridge;
++
+ #ifdef __cplusplus
+ extern "C"
+ {

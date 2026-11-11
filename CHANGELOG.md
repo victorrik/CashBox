@@ -3,6 +3,12 @@
 Registro de cambios grandes (arquitectura, dependencias, pantallas, modelo de datos).
 Lo más reciente va arriba.
 
+## 2026-11-11 - iOS: parche de WatermelonDB para RN 0.88
+
+- RN 0.88 eliminó `RCTCxxBridge`; WatermelonDB 0.28 aún lo usa para instalar JSI.
+- Parche con `patch-package` (`patches/@nozbe+watermelondb+0.28.0.patch`) que expone `-runtime` del bridge y define el alias. Se aplica en `postinstall`.
+- Quitar el parche cuando WatermelonDB publique soporte oficial.
+
 ## 2026-11-11 - Historial, abonos y detalles
 
 - Pantalla Historial en el menú: ventas por fecha descendente con filtros de estado, rango de fechas y cliente.
