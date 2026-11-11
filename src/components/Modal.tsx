@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pressable, StyleSheet} from 'react-native';
+import {KeyboardAvoidingView, Platform, Pressable, StyleSheet, View} from 'react-native';
 import {Portal} from '@gorhom/portal';
 import {theme} from '../theme';
 
@@ -10,25 +10,18 @@ export function Modal({visible, onClose, children}: Props) {
   if (!visible) return null;
   return (
     <Portal>
-      <Pressable style={styles.mask} onPress={onClose} accessibilityLabel="close">
-        <Pressable style={styles.card}>{children}</Pressable>
-      </Pressable>
+      <View style={styles.mask}>
+        <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel="close" />
+        <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={styles.center} pointerEvents="box-none">
+          <View style={styles.card}>{children}</View>
+        </KeyboardAvoidingView>
+      </View>
     </Portal>
   );
 }
 
 const styles = StyleSheet.create({
-  mask: {
-    ...StyleSheet.absoluteFill,
-    backgroundColor: theme.colorMask,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  card: {
-    width: '85%',
-    padding: 20,
-    gap: 12,
-    borderRadius: 8,
-    backgroundColor: theme.colorBgContainer,
-  },
+  mask: {...StyleSheet.absoluteFill, backgroundColor: theme.colorMask},
+  center: {flex: 1, alignItems: 'center', justifyContent: 'center'},
+  card: {width: '88%', maxHeight: '90%', padding: 20, gap: 12, borderRadius: 8, backgroundColor: theme.colorBgContainer},
 });

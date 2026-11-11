@@ -1,8 +1,9 @@
 import React from 'react';
-import {Pressable, StyleSheet, Text, View} from 'react-native';
+import {Pressable, StyleSheet, View} from 'react-native';
 import CheckOutlined from '@ant-design/icons-svg/lib/asn/CheckOutlined';
 import {theme} from '../theme';
 import {Icon} from './Icon';
+import {Text} from './Text';
 
 type Props = {
   checked: boolean;
@@ -34,9 +35,7 @@ export function Checkbox({checked, onChange, label, disabled}: Props) {
         )}
       </View>
       {label ? (
-        <Text style={{color: disabled ? theme.colorTextDisabled : theme.colorText}}>
-          {label}
-        </Text>
+        <Text color={disabled ? theme.colorTextDisabled : theme.colorText}>{label}</Text>
       ) : null}
     </Pressable>
   );

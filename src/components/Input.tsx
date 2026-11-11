@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {StyleSheet, TextInput, TextInputProps} from 'react-native';
-import {Size, theme} from '../theme';
+import {Size, fonts, theme} from '../theme';
 
 type Props = TextInputProps & {size?: Size; status?: 'error'; disabled?: boolean};
 
@@ -41,5 +41,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 11,
     paddingVertical: 0,
     fontSize: theme.fontSize,
+    fontFamily: fonts.regular,
   },
 });

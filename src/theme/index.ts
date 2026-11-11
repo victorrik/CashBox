@@ -14,4 +14,11 @@ export const theme = {
   height: {small: 24, middle: 32, large: 40},
 } as const;
 
+export const fonts = {
+  regular: 'Rubik-Regular',
+  medium: 'Rubik-Medium',
+  semibold: 'Rubik-SemiBold',
+  bold: 'Rubik-Bold',
+} as const;
+
 export type Size = keyof typeof theme.height;

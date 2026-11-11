@@ -1,1 +1,121 @@
-{"home": {"title": "CashBox", "language": "Idioma", "open": "Abrir modal", "close": "Cerrar"}}
+{
+  "common": {
+    "continue": "Continuar",
+    "skip": "Omitir",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "add": "Agregar",
+    "all": "Todos",
+    "confirmDelete": "¿Eliminar este elemento?",
+    "back": "Volver"
+  },
+  "errors": {
+    "required": "Campo obligatorio",
+    "invalidNumber": "Número inválido",
+    "invalidInteger": "Debe ser un entero mayor o igual a 0",
+    "skuExists": "Ya existe un producto con ese SKU",
+    "generic": "Ocurrió un error, intenta de nuevo"
+  },
+  "welcome": {
+    "title": "Bienvenido a CashBox",
+    "subtitle": "Empecemos con el nombre de tu negocio",
+    "storeName": "Nombre del negocio",
+    "storePlaceholder": "Ej. Abarrotes Lupita"
+  },
+  "onboarding": {
+    "categoriesTitle": "Crea tus categorías",
+    "categoriesSubtitle": "Te ayudan a encontrar productos más rápido. Puedes omitir este paso.",
+    "productsTitle": "Registra tus productos",
+    "productsSubtitle": "Agrega los primeros productos. Puedes omitir este paso.",
+    "added": "Agregados"
+  },
+  "menu": {
+    "sales": "Venta",
+    "products": "Productos",
+    "categories": "Categorías",
+    "customers": "Clientes",
+    "history": "Historial"
+  },
+  "home": {
+    "searchPlaceholder": "Buscar producto o SKU",
+    "empty": "No hay productos"
+  },
+  "categories": {
+    "name": "Nombre",
+    "namePlaceholder": "Ej. Bebidas",
+    "color": "Color",
+    "new": "Nueva categoría",
+    "edit": "Editar categoría",
+    "empty": "Aún no hay categorías"
+  },
+  "products": {
+    "sku": "SKU",
+    "name": "Nombre",
+    "price": "Precio",
+    "stock": "Existencias",
+    "minStock": "Existencias mínimas",
+    "category": "Categoría",
+    "noCategory": "Sin categoría",
+    "new": "Nuevo producto",
+    "edit": "Editar producto",
+    "empty": "Aún no hay productos",
+    "outOfStock": "Agotado",
+    "lowStock": "Poco stock",
+    "history": "Ver historial",
+    "noHistory": "Sin movimientos",
+    "event": {
+      "stock_update": "Ajuste de stock",
+      "sale": "Venta",
+      "sale_cancelled": "Venta cancelada"
+    }
+  },
+  "customers": {
+    "name": "Nombre",
+    "phone": "Teléfono",
+    "new": "Nuevo cliente",
+    "edit": "Editar cliente",
+    "empty": "Aún no hay clientes",
+    "search": "Buscar por nombre o teléfono",
+    "purchases": "Compras",
+    "debts": "Deudas"
+  },
+  "cart": {
+    "title": "Carrito",
+    "empty": "El carrito está vacío",
+    "note": "Nota (opcional)",
+    "total": "Total",
+    "charge": "Cobrar"
+  },
+  "checkout": {
+    "title": "Cobrar",
+    "paid": "Pagado",
+    "debt": "En deuda",
+    "received": "Monto recibido",
+    "change": "Cambio",
+    "customer": "Cliente",
+    "pickCustomer": "Seleccionar cliente",
+    "clearCustomer": "Quitar",
+    "confirm": "Confirmar venta",
+    "done": "Venta registrada",
+    "insufficient": "El monto recibido es menor al total",
+    "customerRequired": "Selecciona un cliente para ventas en deuda",
+    "stock": "No hay existencias suficientes"
+  },
+  "sales": {
+    "empty": "Aún no hay ventas",
+    "noCustomer": "Sin cliente",
+    "anyCustomer": "Todos los clientes",
+    "payments": "Abonos",
+    "remaining": "Saldo",
+    "paymentAmount": "Monto del abono",
+    "addPayment": "Registrar abono",
+    "invalidPayment": "Monto inválido o mayor al saldo",
+    "range": {
+      "all": "Siempre",
+      "today": "Hoy",
+      "week": "7 días",
+      "month": "30 días"
+    }
+  }
+}

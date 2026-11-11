@@ -8,7 +8,7 @@ const device = getLocales()[0]?.languageCode;
 
 i18n.use(initReactI18next).init({
   resources: {en: {translation: en}, es: {translation: es}},
-  lng: device === 'es' ? 'es' : 'en',
+  lng: device === 'en' ? 'en' : 'es',
   fallbackLng: 'en',
   interpolation: {escapeValue: false},
 });

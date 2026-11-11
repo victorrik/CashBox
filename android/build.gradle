@@ -19,3 +19,13 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+// WatermelonDB's Java uses BuildConfig.DEBUG, but its build.gradle does not enable
+// buildConfig (disabled by default in AGP 8+). Enabled here to avoid patching node_modules.
+subprojects { subproject ->
+    if (subproject.name == 'nozbe_watermelondb') {
+        subproject.plugins.withId('com.android.library') {
+            subproject.android.buildFeatures.buildConfig = true
+        }
+    }
+}

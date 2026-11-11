@@ -1,1 +1,121 @@
-{"home": {"title": "CashBox", "language": "Language", "open": "Open modal", "close": "Close"}}
+{
+  "common": {
+    "continue": "Continue",
+    "skip": "Skip",
+    "save": "Save",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "add": "Add",
+    "all": "All",
+    "confirmDelete": "Delete this item?",
+    "back": "Back"
+  },
+  "errors": {
+    "required": "Required field",
+    "invalidNumber": "Invalid number",
+    "invalidInteger": "Must be an integer greater than or equal to 0",
+    "skuExists": "A product with that SKU already exists",
+    "generic": "Something went wrong, try again"
+  },
+  "welcome": {
+    "title": "Welcome to CashBox",
+    "subtitle": "Let's start with your business name",
+    "storeName": "Business name",
+    "storePlaceholder": "e.g. Lupita's Groceries"
+  },
+  "onboarding": {
+    "categoriesTitle": "Create your categories",
+    "categoriesSubtitle": "They help you find products faster. You can skip this step.",
+    "productsTitle": "Register your products",
+    "productsSubtitle": "Add your first products. You can skip this step.",
+    "added": "Added"
+  },
+  "menu": {
+    "sales": "Sales",
+    "products": "Products",
+    "categories": "Categories",
+    "customers": "Customers",
+    "history": "History"
+  },
+  "home": {
+    "searchPlaceholder": "Search product or SKU",
+    "empty": "No products"
+  },
+  "categories": {
+    "name": "Name",
+    "namePlaceholder": "e.g. Drinks",
+    "color": "Color",
+    "new": "New category",
+    "edit": "Edit category",
+    "empty": "No categories yet"
+  },
+  "products": {
+    "sku": "SKU",
+    "name": "Name",
+    "price": "Price",
+    "stock": "Stock",
+    "minStock": "Minimum stock",
+    "category": "Category",
+    "noCategory": "No category",
+    "new": "New product",
+    "edit": "Edit product",
+    "empty": "No products yet",
+    "outOfStock": "Out of stock",
+    "lowStock": "Low stock",
+    "history": "View history",
+    "noHistory": "No movements",
+    "event": {
+      "stock_update": "Stock adjustment",
+      "sale": "Sale",
+      "sale_cancelled": "Sale cancelled"
+    }
+  },
+  "customers": {
+    "name": "Name",
+    "phone": "Phone",
+    "new": "New customer",
+    "edit": "Edit customer",
+    "empty": "No customers yet",
+    "search": "Search by name or phone",
+    "purchases": "Purchases",
+    "debts": "Debts"
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "The cart is empty",
+    "note": "Note (optional)",
+    "total": "Total",
+    "charge": "Charge"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "paid": "Paid",
+    "debt": "On credit",
+    "received": "Amount received",
+    "change": "Change",
+    "customer": "Customer",
+    "pickCustomer": "Select customer",
+    "clearCustomer": "Remove",
+    "confirm": "Confirm sale",
+    "done": "Sale registered",
+    "insufficient": "Amount received is less than the total",
+    "customerRequired": "Select a customer for credit sales",
+    "stock": "Not enough stock"
+  },
+  "sales": {
+    "empty": "No sales yet",
+    "noCustomer": "No customer",
+    "anyCustomer": "All customers",
+    "payments": "Payments",
+    "remaining": "Balance",
+    "paymentAmount": "Payment amount",
+    "addPayment": "Add payment",
+    "invalidPayment": "Invalid amount or greater than balance",
+    "range": {
+      "all": "All time",
+      "today": "Today",
+      "week": "7 days",
+      "month": "30 days"
+    }
+  }
+}

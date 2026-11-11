@@ -1,8 +1,9 @@
 import React from 'react';
-import {ActivityIndicator, Pressable, StyleSheet, Text, View} from 'react-native';
+import {ActivityIndicator, Pressable, StyleSheet} from 'react-native';
 import type {IconDefinition} from '@ant-design/icons-svg/lib/types';
 import {Size, theme} from '../theme';
 import {Icon} from './Icon';
+import {Text} from './Text';
 
 type Props = {
   title?: string;
@@ -64,9 +65,7 @@ export function Button({
         <Icon icon={icon} color={color} />
       ) : null}
       {title ? (
-        <View>
-          <Text style={{color, fontSize: theme.fontSize}}>{title}</Text>
-        </View>
+        <Text color={color}>{title}</Text>
       ) : null}
     </Pressable>
   );
