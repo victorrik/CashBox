@@ -16,6 +16,7 @@ end
 
 target 'CashBox' do
   config = use_native_modules!
+  pod 'simdjson', path: '../node_modules/@nozbe/simdjson', modular_headers: true
 
   use_react_native!(
     :path => config[:reactNativePath],
